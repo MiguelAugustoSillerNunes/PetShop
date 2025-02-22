@@ -1,0 +1,35 @@
+.panel {
+    max-width: 7000px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.bg-primary {
+    background-color: #BB3B0E !important;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #BB3B0E;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #BB3B0E;
+}
+
+.titulo-empresa {
+    color: #7e4327;
+}
+
+.img-dog {
+    width: 300px; /* Defina a largura desejada */
+    height: 300px; /* Defina a altura desejada */
+}
+
+
