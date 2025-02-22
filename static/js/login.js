@@ -2,17 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede o envio do formulário
+        event.preventDefault(); 
 
-        const email = document.getElementById("text").value;
-        const password = document.getElementById("password").value;
+        const usuario = document.getElementById("usuario").value.trim();
+        const password = document.getElementById("senha").value.trim();
 
-        if (email === "admin" && password === "admin") {
-            alert("Login bem-sucedido!");
-            // Redirecionar (caso necessário)
-            // window.location.href = "dashboard.html";
+        const toastSuccess = new bootstrap.Toast(document.getElementById("toastSuccess"));
+        const toastError = new bootstrap.Toast(document.getElementById("toastError"));
+
+        if (usuario === "admin" && password === "admin") {
+            toastSuccess.show(); 
+            setTimeout(() => {
+                window.location.href = "tela-inicial.html";
+            }, 500);
         } else {
-            alert("Usuário ou senha incorretos!");
+            toastError.show(); 
         }
     });
 });
