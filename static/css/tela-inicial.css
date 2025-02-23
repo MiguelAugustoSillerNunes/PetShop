@@ -77,4 +77,10 @@
     border: 2px solid transparent; 
 }
 
+.hr-form {
+    width: 95%;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
 
