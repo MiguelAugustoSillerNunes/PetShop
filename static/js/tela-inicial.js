@@ -25,16 +25,13 @@ const agendamentos = [
     }
 ];
 
-// Função para preencher a tabela com os dados
 function preencherTabela() {
     const tableBody = document.getElementById('tabela-dados');
     
-    // Usando for para adicionar as linhas à tabela
     for (let i = 0; i < agendamentos.length; i++) {
         const agendamento = agendamentos[i];
         const row = document.createElement('tr');
 
-        // Criar as células da linha
         row.innerHTML = `
             <th scope="row">${agendamento.id}</th>
             <td>${agendamento.nome}</td>
